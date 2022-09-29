@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário de cadastro</title>
+    <link rel="shortcut icon" href="./img/favicon.jpeg" type="image/x-icon">
+</head>
+<body>
+    <main>
+        <header>
+                <h1>Formulário de inscrição</h1>
+                <h2>Preencha os dados abaixo</h2>
+        </header>
+        
+        <aside>
+            <form>
+                <!--Colocar nome-->
+                <label for="nome"> Nome</label>
+                    <input type="text" name="nome" id="nome" placeholder="Digite seu nome aqui..." required="true">
+
+                <!--Colocar email-->
+                <label for="email">E-mail</label>
+                    <input type="text" name="email" id="email" placeholder="Digite seu e-mail aqui..." required="true">
+
+                <!--Colocar descricao-->
+                <label for="descricao">Descrição</label>
+                    <textarea name="descricao" id="descricao" placeholder="Fale mais sobre você aqui..." cols="30" rows="10" required="true"></textarea>
+                
+                <!--escolher modulo-->
+                <label for="modulo">Módulo</label>
+                    <select name="modulo" id="modulo" required="true">
+                        <option value="">Escolher módulo</option>
+                        <option value="modulo1">Módulo 1</option>
+                        <option value="modulo2">Módulo 2</option>
+                        <option value="modulo3">Módulo 3</option>
+                        <option value="modulo4">Módulo 4</option>
+                        <option value="modulo5">Módulo 5</option>
+                        <option value="modulo6">Módulo 6</option>
+                    </select>
+
+                <!--Senha-->
+                <label for="senha">Senha</label>
+                    <input type="password" name="senha" id="senha" placeholder="Digite sua senha..." required="true">
+                
+                <!--Confirmar senha-->
+                <label for="confirmarsenha">Confirmar senha</label>
+                <input type="password" name="confirmarsenha" id="confirmarsenha" placeholder="Digite sua senha novamente...">
+
+                <!--Newsletter-->
+                <fieldset>
+                    <legend>Deseja receber novidades em seu e-mail?</legend>
+
+                    <div>
+                        <label for="sim">Sim</label>
+                            <input type="radio" name="newsletter" id="sim" required="true">
+                    </div>
+
+                    <div>
+                        <label for="nao">Não</label>
+                            <input type="radio" name="newsletter" id="nao" required="true">
+                    </div>
+                </fieldset>
+                
+                <!--Submit-->
+                <button type="submit">Cadastrar</button>
+              
+            </form>
+        </aside>
+    </main>
+    
+</body>
+</html>
