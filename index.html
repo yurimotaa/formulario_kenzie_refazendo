@@ -9,62 +9,62 @@
     <main>
         <header>
                 <h1>Formulário de inscrição</h1>
-                <h2>Preencha os dados abaixo</h2>
         </header>
         
         <aside>
-            <form>
-                <!--Colocar nome-->
-                <label for="nome"> Nome</label>
-                    <input type="text" name="nome" id="nome" placeholder="Digite seu nome aqui..." required="true">
+            <fieldset>
+                <legend>Preencha os dados abaixo</legend>
+                <form>
+                    <!--Colocar nome-->
+                    <p><label for="nome"> Nome</label>
+                        <input type="text" name="nome" id="nome" placeholder="Digite seu nome aqui..." required="true"></p>
 
-                <!--Colocar email-->
-                <label for="email">E-mail</label>
-                    <input type="text" name="email" id="email" placeholder="Digite seu e-mail aqui..." required="true">
+                    <!--Colocar email-->
+                    <p><label for="email">E-mail</label>
+                        <input type="text" name="email" id="email" placeholder="Digite seu e-mail aqui..." required="true"></p>
 
-                <!--Colocar descricao-->
-                <label for="descricao">Descrição</label>
-                    <textarea name="descricao" id="descricao" placeholder="Fale mais sobre você aqui..." cols="30" rows="10" required="true"></textarea>
+                    <!--Colocar descricao-->
+                    <p><label for="descricao">Descrição</label>
+                        <textarea name="descricao" id="descricao" placeholder="Fale mais sobre você aqui..." cols="30" rows="10" required="true"></textarea></p>
+                    
+                    <!--escolher modulo-->
+                    <p><label for="modulo">Módulo</label>
+                        <select name="modulo" id="modulo" required="true">
+                            <option value="">Escolher módulo</option>
+                            <option value="modulo1">Módulo 1</option>
+                            <option value="modulo2">Módulo 2</option>
+                            <option value="modulo3">Módulo 3</option>
+                            <option value="modulo4">Módulo 4</option>
+                            <option value="modulo5">Módulo 5</option>
+                            <option value="modulo6">Módulo 6</option>
+                        </select>
+                    </p>
+
+                    <!--Senha-->
+                    <p><label for="senha">Senha</label>
+                        <input type="password" name="senha" id="senha" placeholder="Digite sua senha..." required="true"></p>
+                    
+                    <!--Confirmar senha-->
+                    <p><label for="confirmarsenha">Confirmar senha</label>
+                    <input type="password" name="confirmarsenha" id="confirmarsenha" placeholder="Digite sua senha novamente..."></p>
+
+                    <!--Newsletter-->
+                        <p>Deseja receber novidades em seu e-mail?</p>
+
+                        <div>
+                            <label for="sim">Sim</label>
+                                <input type="radio" name="newsletter" id="sim" required="true">
+
+                            <label for="nao">Não</label>
+                                <input type="radio" name="newsletter" id="nao" required="true">
+                        </div>
                 
-                <!--escolher modulo-->
-                <label for="modulo">Módulo</label>
-                    <select name="modulo" id="modulo" required="true">
-                        <option value="">Escolher módulo</option>
-                        <option value="modulo1">Módulo 1</option>
-                        <option value="modulo2">Módulo 2</option>
-                        <option value="modulo3">Módulo 3</option>
-                        <option value="modulo4">Módulo 4</option>
-                        <option value="modulo5">Módulo 5</option>
-                        <option value="modulo6">Módulo 6</option>
-                    </select>
-
-                <!--Senha-->
-                <label for="senha">Senha</label>
-                    <input type="password" name="senha" id="senha" placeholder="Digite sua senha..." required="true">
+                    
+                    <!--Submit-->
+                    <p><button type="submit">Cadastrar</button></p>
                 
-                <!--Confirmar senha-->
-                <label for="confirmarsenha">Confirmar senha</label>
-                <input type="password" name="confirmarsenha" id="confirmarsenha" placeholder="Digite sua senha novamente...">
-
-                <!--Newsletter-->
-                <fieldset>
-                    <legend>Deseja receber novidades em seu e-mail?</legend>
-
-                    <div>
-                        <label for="sim">Sim</label>
-                            <input type="radio" name="newsletter" id="sim" required="true">
-                    </div>
-
-                    <div>
-                        <label for="nao">Não</label>
-                            <input type="radio" name="newsletter" id="nao" required="true">
-                    </div>
-                </fieldset>
-                
-                <!--Submit-->
-                <button type="submit">Cadastrar</button>
-              
-            </form>
+                </form>
+        </fieldset>
         </aside>
     </main>
     
